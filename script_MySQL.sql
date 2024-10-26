@@ -1,0 +1,58 @@
+CREATE DATABASE IF NOT EXISTS coleta;
+
+USE coleta;
+
+CREATE TABLE pontos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255),
+    endereco VARCHAR(255),
+    zona VARCHAR(100),
+    contatos VARCHAR(255),
+    horario_expediente VARCHAR(255)
+);
+
+INSERT INTO pontos (nome, endereco, zona, contatos, horario_expediente) VALUES
+('MATRIZ – Galpão Sucata Digital', 'Rua Templários, 192, Vila Formosa', 'Zona Leste', '(11) 95768-2368', 'Segunda à Quinta das 08h às 18h, Sexta das 08h às 17h'),
+('ICRR CELL Assistência (Loja 1)', 'Avenida Líder, 2810, Cidade Líder', 'Zona Leste', '(11) 97389-5065', 'Segunda à Sexta das 09h às 17h'),
+('ETEC Professor Adhemar Batista Heméritas', 'Rua Abilene, 16, Parque Santo Antônio', 'Zona Sul', '(11) 99596-0077', 'Segunda à Sexta das 07h às 23h'),
+('SENAC Tatuapé', 'Rua Coronel Luiz Americano, 130, Tatuapé', 'Zona Leste', '(11) 99347-9348', 'Segunda à Sexta das 09h às 17h'),
+('GoodStorage – Unidade Tatuapé', 'Av. Celso Garcia, 4638, Tatuapé', 'Zona Leste', '(11) 3340-4663', 'Segunda à Sexta das 07h às 19h'),
+('Amplifique Coworking', 'R. Tabajaras, 439 – Mooca', 'Zona Leste', '(11) 4200-0880', 'Segunda à Sexta das 08h às 18h'),
+('Crystal Tower', 'Rua Lydia Ferrari Magnoli, 108, Jardim Avelino', 'Zona Sudeste', '(11) 2345-7860', 'Segunda à Sexta das 09h às 17h'),
+('Shopping Pátio Paulista', 'Rua Treze de Maio, 1947 – 4º Pavimento, Bela Vista', 'Centro', '(11) 3179-8504', 'Segunda à Segunda das 10h às 20h'),
+('GoodStorage (Unidade Estado)', 'Av. Do Estado, 5460, Cambuci', 'Centro', '(11) 3340-4663', 'Segunda a Sexta das 07h às 19h'),
+('UNIMED', 'R. José Getúlio, 78/90, Aclimação', 'Centro', '(11) 2146-2603', 'Segunda à Sexta das 09h às 17h'),
+('GoodStorage (Unidade Lapa)', 'Av. Embargador Macedo Soares, 977, Parque Res. da Lapa', 'Zona Oeste', '(11) 2348-4663', 'Segunda à Sexta das 07h às 19h'),
+('GoodStorage (Unidade Jaguaré)', 'Av. Gonçalo Madeira, 220, Jaguaré', 'Zona Oeste', '(11) 4095-6558', 'Segunda à Sexta das 07h às 19h'),
+('Condomínio Villa Lobos Office Park', 'Avenida Queiroz Filho, 1700, Vila Hamburguesa', 'Zona Oeste', '(11) 4302-5842', 'Atendimento 24 horas'),
+('AGS4 Office Coworking', 'Rua Professor Ernest Marcus, 65, Pacaembu', 'Zona Oeste', '(11) 3231-5550', 'Segunda à Sexta das 09h às 19h'),
+('GoodStorage (Unidade Morumbi)', 'Av Giovanni Gronchi, 5400, Vila Andrade', 'Zona Oeste', '(11) 3054-4663', 'Segunda à Sexta das 07h às 19h'),
+('Parque Luis Carlos Prestes', 'Rua João Della Manna, 665, JD ROLINOPOLIS', 'Zona Oeste', '(11) 95220-0443', 'Segunda à Sexta das 08h às 17h'),
+('Condomínio Vista Verde Offices', 'Av. Queiroz Filho, 1560, Vila Andrade', 'Zona Oeste', '(11) 94024-4333', 'Segunda à Sexta das 08h às 20h'),
+('Morumbi Town Shopping', 'Av. Giovanni Gronchi, 5930, Vila Andrade', 'Zona Oeste', '(11) 3740-6946', 'Segunda à Sábado das 10h às 22h, Domingos e Feriados das 14h às 20h'),
+('Instituto Madre Mazzarello', 'R. Praça Domingos Correia da Cruz, 14, Santana', 'Zona Norte', '(11) 94016-0954', 'Segunda à Sexta das 07h às 17h'),
+('CEU PERUS', 'R. Bernardo José de Lorena s/n, Vila Fanton', 'Zona Norte', '(11) 3915-8751', 'Segunda à domingo das 07h às 22h'),
+('EDIFÍCIO LUIZ FRANCO', 'Rua Felício Marcondes, nº 436, Centro, Guarulhos', 'Região Metropolitana', NULL, 'Segunda à sexta das 08h às 20h, Sábado das 09h às 13h'),
+('Shopping Internacional De Guarulhos', 'Rua Engenheiro Camilo Olivetti, 295, Vila Itapegica, Guarulhos', 'Região Metropolitana', '(11) 2345-7860', 'Segunda à sábado das 10h às 22h, Domingo das 11h às 18h'),
+('SENAC – Taboão da Serra', 'Rua Salvador Branco de Andrade, 182, Jardim São Miguel, Taboão da Serra', 'Região Metropolitana', '(11) 98687-0059', 'Segunda à Sexta das 09h às 17h'),
+('Grupo Bertoni – Ultragaz – Franco da Rocha', 'Av. da Saudade, 1091, Monte Verde', 'Região Metropolitana', '(11) 97508-4116', 'Segunda à Segunda das 08h às 18h'),
+('TECSI Automação Industrial – ABC', 'Rua Francisco Ôngaro, 56, São Bernardo do Campo', 'Região Metropolitana', '(11) 93535-1047', 'Segunda à Sexta das 08h às 18h'),
+('EMEB Natalina Cuzziol Ferro – ABC', 'Rua Salim Mafhoud, 965, Terra Nova II, São Bernardo do Campo – SP', 'Região Metropolitana', '(11) 93489-0984', 'Segunda à sexta das 09h às 17h'),
+('Parque Ibirapuera', 'Av. Pedro Álvares Cabral, s/n', 'Centro', NULL, NULL),
+('Parque Trianon', 'Rua Peixoto Gomide, 949', 'Centro', NULL, NULL),
+('Parque Prefeito Mario Covas', 'Avenida Paulista, 1853', 'Centro', NULL, NULL),
+('Parque da Independência', 'Avenida Nazareth, s/n', 'Zona Sul', NULL, NULL),
+('Parque do Cordeiro Martin Luther King', 'Rua Breves, 968', 'Zona Sul', NULL, NULL),
+('Parque Lina e Paulo Raia', 'Rua Volkswagen, s/n', 'Zona Sul', NULL, NULL),
+('Parque Buenos Aires', 'Av Angélica, 1.500', 'Centro', NULL, NULL),
+('Parque do Povo', 'Av. Henrique Chamma, 420', 'Zona Sul', NULL, NULL),
+('Parque da Aclimação', 'Rua Muniz de Souza, 1.119', 'Centro', NULL, NULL),
+('Parque Burle Marx', 'Av. D Helena Pereira de Moraes, 200', 'Zona Sul', NULL, NULL),
+('Parque Piqueri', 'R. Tuiuti, 515', 'Zona Leste', NULL, NULL),
+('Parque do Carmo', 'Av. Afonso de Sampaio e Sousa, 951 – Itaquera', 'Zona Leste', NULL, NULL),
+('Parque Vila Guilherme /Trote', 'Rua São Quirino, 905', 'Zona Norte', NULL, NULL),
+('Coopamare', 'Rua Galeno de Almeida, 659 – Pinheiros', 'Zona Oeste', NULL, NULL),
+('Recifran', 'Rua Junqueira Freire, nº 176 – Glicério', 'Centro', NULL, NULL),
+('Recifavela', 'Rua Capitão Pacheco Chaves – Mooca', 'Zona Leste', NULL, NULL),
+('Cooper Viva Bem', 'Av. Embaixador Macedo Soares, 6000', 'Zona Sul', NULL, NULL),
+('Nova Esperança', 'Rua Japichaua, 311 – Jd. Matarazzo', 'Zona Leste', NULL, NULL);

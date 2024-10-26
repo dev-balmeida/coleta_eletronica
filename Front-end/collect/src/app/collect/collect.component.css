@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh;
+    background-color: #388659;
+}
+
+h2, h3, label, button, table {
+    font-family: "Noto Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    font-size: 50px;
+    color: #0C1D13;   
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+table {
+    font-size: 14px;
+}
+
+.formulario {
+    border: #0C1D13 solid 2px;
+    padding: 20px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 70px;
+    background-color: #91CA98;
+    border-radius: 8px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario input {
+    width: 73%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: #0C1D13 solid 1px;
+    border-radius: 4px;
+    background-color: #BADEBE;
+}
+
+#form-nome {
+    width: 74%;
+}
+
+.buttons {
+    position: relative;
+    left: 40%;
+    width: 62%;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #0C1D13;
+    color: white;
+    border: #0C1D13 solid 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #6FC392;
+    color: #0C1D13;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.lista {
+    flex-grow: 1;
+    max-width: 69%;
+    border: #0C1D13 solid 2px;
+    padding: 20px;
+    margin-top: 70px;
+    border-radius: 8px;
+    background-color: #91CA98;
+    max-height: 500px; /*ALTURA DA LISTA */
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #0C1D13;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: #6FC392;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #0C1D13;
+    width: 400px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.hidden-details {
+    display: none;
+}
+
+.expanded-details {
+    display: table-row;
+}
